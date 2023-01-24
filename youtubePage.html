@@ -4,49 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a862077b40.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Youtube Page</title>
 </head>
-<body>
+<body id="body" >
     <nav id="navbar" >
         <div id="nav-item1" >
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-list" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <line x1="9" y1="6" x2="20" y2="6" />
-                <line x1="9" y1="12" x2="20" y2="12" />
-                <line x1="9" y1="18" x2="20" y2="18" />
-                <line x1="5" y1="6" x2="5" y2="6.01" />
-                <line x1="5" y1="12" x2="5" y2="12.01" />
-                <line x1="5" y1="18" x2="5" y2="18.01" />
-              </svg>
+            <i class="fa fa-light fa-bars"></i>
               <img src="./components/youtube.png" alt="Profile Photo" width="90" height="20">
         </div>
         <div id="nav-item2" >
             <div id="input-field" >
             <input placeholder="Search" type="text" id="search-bar" >
-            <svg id="search-icon" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <circle cx="10" cy="10" r="7" />
-                <line x1="21" y1="21" x2="15" y2="15" />
-              </svg>
+            <div id="search-icon" >
+                <i class="fa fa-light fa-magnifying-glass"></i>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-microphone" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <rect x="9" y="2" width="6" height="11" rx="3" />
-                <path d="M5 10a7 7 0 0 0 14 0" />
-                <line x1="8" y1="21" x2="16" y2="21" />
-                <line x1="12" y1="17" x2="12" y2="21" />
-              </svg>
+            </div>
+            <i class="fa fa-light fa-microphone"></i>
         </div>
         <div id="nav-item3" >
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-video-plus" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-video-plus" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <path d="M15 10l4.553 -2.276a1 1 0 0 1 1.447 .894v6.764a1 1 0 0 1 -1.447 .894l-4.553 -2.276v-4z" />
                 <rect x="3" y="6" width="12" height="12" rx="2" />
                 <line x1="7" y1="12" x2="11" y2="12" />
                 <line x1="9" y1="10" x2="9" y2="14" />
               </svg>
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bell" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bell" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <path d="M10 5a2 2 0 0 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" />
                 <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
@@ -54,320 +39,287 @@
               <img src="./components/profile.jpg" alt="Profile Photo" width="30" height="30">
         </div>
     </nav>
-    <div class="body" >
-        <div class="sideNavbar" >
-            <div class="sideNav-item1" >
-                <div class="sideNav-items1" >
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <polyline points="5 12 3 12 12 3 21 12 19 12" />
-                        <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
-                        <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
-                        </svg>
-                      <h4>Home</h4>
+    
+    <header id="header">
+        <button id="all" >All</button>
+        <button>Game Show</button>
+        <button>Music</button>
+        <button>Web Development</button>
+        <button>NFAK</button>
+        <button>Game Show</button>
+        <button>Pakistan</button>
+        <button>Web Development</button>
+        <button>Pakistani Drama</button>
+        <button>C++</button>
+        <button>Pakistani Drama</button>
+    </header>
+    <main id="main" >
+        <section class="row" >
+            <div id="card" >
+                <div id="img" >
+                    <img src="./components/imran-khan-7.jpg" alt="profile-image" >
                 </div>
-                <div class="sideNav-items1" >
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <rect x="3" y="5" width="18" height="14" rx="4" />
-                        <path d="M10 9l5 3l-5 3z" />
-                      </svg>
-                      <h4>Shorts</h4>
-                </div>
-                <div class="sideNav-items1" >
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bell-ringing" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M10 5a2 2 0 0 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" />
-                        <path d="M9 17v1a3 3 0 0 0 6 0v-1" />
-                        <path d="M21 6.727a11.05 11.05 0 0 0 -2.794 -3.727" />
-                        <path d="M3 6.727a11.05 11.05 0 0 1 2.792 -3.727" />
-                      </svg>
-                      <h4>Subscription</h4>
+                <div id="text" >
+                    <div id="logo">
+                        <img id="profile" src="./components/profile.jpg" >
+                        
+                    </div>
+                    <div id="text-detail" >
+                        <div id="heading" >
+                            <h4>Chairman PTI Imran Khan's Important Press Conference in Lahore</h4>
+                        </div>
+                        <div id="details" >
+                            <p>Imran Khan<br>
+                                5.4M views. 5 months ago</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="sideNav-item2" >
-                <div class="sideNav-items2" >
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-history" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <polyline points="12 8 12 12 14 14" />
-                        <path d="M3.05 11a9 9 0 1 1 .5 4m-.5 5v-5h5" />
-                      </svg>
-                      <h4>History</h4>
+            <div id="card" >
+                <div id="img" >
+                    <img src="./components/card image.jpg" alt="profile-image" >
                 </div>
-                <div class="sideNav-items2" >
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <rect x="3" y="5" width="18" height="14" rx="4" />
-                        <path d="M10 9l5 3l-5 3z" />
-                      </svg>
-                      <h4>Videos</h4>
+                <div id="text" >
+                    <div id="logo">
+                        <img id="profile" src="./components/profile.jpg" >
+                        
+                    </div>
+                    <div id="text-detail" >
+                        <div id="heading" >
+                            <h4>Chairman PTI Imran Khan's Important Press Conference in Lahore</h4>
+                        </div>
+                        <div id="details" >
+                            <p>Imran Khan<br>
+                                5.4M views. 5 months ago</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="sideNav-items2" >
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <circle cx="12" cy="12" r="9" />
-                        <polyline points="12 7 12 12 15 15" />
-                      </svg>
-                      <h4>Watch Leter</h4>
+            </div>
+            <div id="card" >
+                <div id="img" >
+                    <img src="./components/ary.jpg" alt="profile-image" >
                 </div>
-                <div class="sideNav-items2" >
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-thumb-up" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M7 11v8a1 1 0 0 1 -1 1h-2a1 1 0 0 1 -1 -1v-7a1 1 0 0 1 1 -1h3a4 4 0 0 0 4 -4v-1a2 2 0 0 1 4 0v5h3a2 2 0 0 1 2 2l-1 5a2 3 0 0 1 -2 2h-7a3 3 0 0 1 -3 -3" />
-                      </svg>
-                      <h4>Liked</h4>
+                <div id="text" >
+                    <div id="logo">
+                        <img id="profile" src="./components/profile.jpg" >
+                        
+                    </div>
+                    <div id="text-detail" >
+                        <div id="heading" >
+                            <h4>Chairman PTI Imran Khan's Important Press Conference in Lahore</h4>
+                        </div>
+                        <div id="details" >
+                            <p>Imran Khan<br>
+                                5.4M views. 5 months ago</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="sideNav-items2" >
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-caret-down" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M18 15l-6 -6l-6 6h12" transform="rotate(180 12 12)" />
-                      </svg>
-                      <h4>More</h4>
+            </div>
+            <div id="card" >
+                <div id="img" >
+                    <img src="./components/reporter.jpeg" alt="profile-image" >
                 </div>
+                <div id="text" >
+                    <div id="logo">
+                        <img id="profile" src="./components/profile.jpg" >
+                        
+                    </div>
+                    <div id="text-detail" >
+                        <div id="heading" >
+                            <h4>Chairman PTI Imran Khan's Important Press Conference in Lahore</h4>
+                        </div>
+                        <div id="details" >
+                            <p>Imran Khan<br>
+                                5.4M views. 5 months ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="row" >
+            <div id="card" >
+                <div id="img" >
+                    <img src="./components/imran-khan-7.jpg" alt="profile-image" >
+                </div>
+                <div id="text" >
+                    <div id="logo">
+                        <img id="profile" src="./components/profile.jpg" >
+                        
+                    </div>
+                    <div id="text-detail" >
+                        <div id="heading" >
+                            <h4>Chairman PTI Imran Khan's Important Press Conference in Lahore</h4>
+                        </div>
+                        <div id="details" >
+                            <p>Imran Khan<br>
+                                5.4M views. 5 months ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="card" >
+                <div id="img" >
+                    <img src="./components/card image.jpg" alt="profile-image" >
+                </div>
+                <div id="text" >
+                    <div id="logo">
+                        <img id="profile" src="./components/profile.jpg" >
+                        
+                    </div>
+                    <div id="text-detail" >
+                        <div id="heading" >
+                            <h4>Chairman PTI Imran Khan's Important Press Conference in Lahore</h4>
+                        </div>
+                        <div id="details" >
+                            <p>Imran Khan<br>
+                                5.4M views. 5 months ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="card" >
+                <div id="img" >
+                    <img src="./components/imran-khan-7.jpg" alt="profile-image" >
+                </div>
+                <div id="text" >
+                    <div id="logo">
+                        <img id="profile" src="./components/profile.jpg" >
+                        
+                    </div>
+                    <div id="text-detail" >
+                        <div id="heading" >
+                            <h4>Chairman PTI Imran Khan's Important Press Conference in Lahore</h4>
+                        </div>
+                        <div id="details" >
+                            <p>Imran Khan<br>
+                                5.4M views. 5 months ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="card" >
+                <div id="img" >
+                    <img src="./components/card image.jpg" alt="profile-image" >
+                </div>
+                <div id="text" >
+                    <div id="logo">
+                        <img id="profile" src="./components/profile.jpg" >
+                        
+                    </div>
+                    <div id="text-detail" >
+                        <div id="heading" >
+                            <h4>Chairman PTI Imran Khan's Important Press Conference in Lahore</h4>
+                        </div>
+                        <div id="details" >
+                            <p>Imran Khan<br>
+                                5.4M views. 5 months ago</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <nav id="side-navbar" >
+        <div id="side-navbar-block-1" >
+            <div id="block-1-item-1" >
+                <div class="home" id="side-item1" >
+                    <div id="side-items" >
+                          <i class=" fa fa-light fa-house-chimney"></i>
+                          <p>Home</p>
+                    </div>
+                  </div>
+                  <div id="side-item1" >
+                    <div id="side-items" >
+                        <i class="fa fa-light fa-circle-play"></i>
+                          <p>Shorts</p>
+                    </div>
+                  </div>
+                  <div id="side-item1" >
+                    <div id="side-items" >
+                        <i class=" fa fa-light fa-bell"></i>
+                          <p>Subscription</p>
+                    </div>
+                  </div>
+            </div>
+            <div id="block-1-item-2" >
+                <div id="side-item1" >
+                    <div id="side-items" >
+                        <i class=" fa fa-light fa-file-video"></i>
+                          <p>Library</p>
+                    </div>
+                  </div>
+                  <div id="side-item1" >
+                    <div id="side-items" >
+                        <i class="fa fa-light fa-clock-rotate-left"></i>
+                          <p>History</p>
+                    </div>
+                  </div>
+                  <div id="side-item1" >
+                    <div id="side-items" >
+                        <i class="fa fa-light fa-clock"></i>
+                          <p>Watch Later</p>
+                    </div>
+                  </div>
+                  <div id="side-item1" >
+                    <div id="side-items" >
+                        <i class="fa fa-light fa-thumbs-up"></i>
+                          <p>Like Video</p>
+                    </div>
+                  </div>
+            </div>
+              </div>
+              <div id="side-navbar-block-2" >
+                <div id="block-2-item-2" >
+                    <h3>Subscriptions</h3>
+                    <div id="side-item1" >
 
-            </div>
-            <div class="sideNav-item3" >
-                <h3>Subscription</h3>
-                <div class="sideNav-items2" >
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-music" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <circle cx="6" cy="17" r="3" />
-                        <circle cx="16" cy="17" r="3" />
-                        <polyline points="9 17 9 4 19 4 19 17" />
-                        <line x1="9" y1="8" x2="19" y2="8" />
-                      </svg>
-                      <h4>Music</h4>
+                        <div id="side-items" >
+                            <i class="fa fa-light fa-music"></i>
+                              <p>Music</p>
+                        </div>
+                      </div>
+                      <div id="side-item1" >
+                        <div id="side-items" >
+                            <i class="fa fa-light fa-medal"></i>
+                              <p>Sports</p>
+                        </div>
+                      </div>
+                      <div id="side-item1" >
+                        <div id="side-items" >
+                            <i class="fa fa-light fa-gamepad"></i>
+                              <p>Gaming</p>
+                        </div>
+                      </div>
+                      <div id="side-item1" >
+                        <div id="side-items" >
+                            <i class="fa fa-light fa-newspaper"></i>
+                              <p>News</p>
+                        </div>
+                      </div>
                 </div>
-                <div class="sideNav-items2" >
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-gamepad" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <rect x="2" y="6" width="20" height="12" rx="2" />
-                        <path d="M6 12h4m-2 -2v4" />
-                        <line x1="15" y1="11" x2="15" y2="11.01" />
-                        <line x1="18" y1="13" x2="18" y2="13.01" />
-                      </svg>
-                      <h4>Game</h4>
+                <div id="block-2-item-1" >
+                    <h3>Explore</h3>
+                    <div id="side-item1" >
+                        <div id="side-items" >
+                            <i class="fa fa-light fa-fire"></i>
+                              <p>Trending</p>
+                        </div>
+                      </div>
+                      <div id="side-item1" >
+                        <div id="side-items" >
+                            <i class="fa fa-light fa-music"></i>
+                              <p>Music</p>
+                        </div>
+                      </div>
+                      <div id="side-item1" >
+                        <div id="side-items" >
+                            <i class=" fa fa-light fa-bell"></i>
+                              <p>Subscription</p>
+                        </div>
+                      </div>
                 </div>
-                <div class="sideNav-items2" >
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-news" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M16 6h3a1 1 0 0 1 1 1v11a2 2 0 0 1 -4 0v-13a1 1 0 0 0 -1 -1h-10a1 1 0 0 0 -1 1v12a3 3 0 0 0 3 3h11" />
-                        <line x1="8" y1="8" x2="12" y2="8" />
-                        <line x1="8" y1="12" x2="12" y2="12" />
-                        <line x1="8" y1="16" x2="12" y2="16" />
-                      </svg>
-                      <h4>News</h4>
-                </div>
-                <div class="sideNav-items2" >
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ball-football" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <circle cx="12" cy="12" r="9" />
-                        <path d="M12 7l4.76 3.45l-1.76 5.55h-6l-1.76 -5.55z" />
-                        <path d="M12 7v-4m3 13l2.5 3m-.74 -8.55l3.74 -1.45m-11.44 7.05l-2.56 2.95m.74 -8.55l-3.74 -1.45" />
-                      </svg>
-                      <h4>Sports</h4>
-                </div>
-                <div class="sideNav-items2" >
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" />
-                        <circle cx="12" cy="12" r="3" />
-                      </svg>
-                      <h4>Setting</h4>
-                </div>
-            </div>
-        </div>
-        <div class="body-items">
-            <div class="body-item2" >
-                <button type="button">Imran Khan</button>
-                <button type="button">Yousaf Ramzan</button>
-                <button type="button">Live</button>
-                <button type="button">Music</button>
-                <button type="button">ARY News</button>
-                <button type="button">CSS</button>
-                <button type="button">Programming</button>
-                <button type="button"> Nusrat Fateh Ali Khan</button>
-                <button type="button">C++</button>
-                <button type="button">PTI</button>
-                <button type="button">HTML</button>
-                <button type="button">Fun</button>
-                <button type="button">Ahsan</button>
-            </div>
-            <div class="body-item1" >
-                <div class="cardList1" >
-                    <div class="cardList1-items" >
-                        <div class="image" >
-                            <img src="./components/card image.jpg" alt="Profile Photo" width="100%" height="100%">
-                        </div>
-                        <div class="text" >
-                            <div class="text-item1" >
-                                <div class="logo" >
-                                    <img src="./components/profile.jpg" alt="Profile Photo" width="40" height="40">
-                                </div>
-                                <div class="title" >
-                                    <h3>Pakistan PM Imran Khan addresses United Nations</h3>
-                                </div>
-                            </div>
-                            <div class="text-item2" >
-                                <div class="logo" ></div>
-                                <div class="title" >
-                                    <h5>Pakistan PM Imran Khan addresses United Nations General Assembly</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cardList1-items" >
-                        <div class="image" >
-                            <img src="./components/card image.jpg" alt="Profile Photo" width="100%" height="100%">
-                        </div>
-                        <div class="text" >
-                            <div class="text-item1" >
-                                <div class="logo" >
-                                    <img src="./components/profile.jpg" alt="Profile Photo" width="40" height="40">
-                                </div>
-                                <div class="title" >
-                                    <h3>Pakistan PM Imran Khan addresses United Nations</h3>
-                                </div>
-                            </div>
-                            <div class="text-item2" >
-                                <div class="logo" ></div>
-                                <div class="title" >
-                                    <h5>Pakistan PM Imran Khan addresses United Nations General Assembly</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cardList1-items" >
-                        <div class="image" >
-                            <img src="./components/card image.jpg" alt="Profile Photo" width="100%" height="100%">
-                        </div>
-                        <div class="text" >
-                            <div class="text-item1" >
-                                <div class="logo" >
-                                    <img src="./components/profile.jpg" alt="Profile Photo" width="40" height="40">
-                                </div>
-                                <div class="title" >
-                                    <h3>Pakistan PM Imran Khan addresses United Nations</h3>
-                                </div>
-                            </div>
-                            <div class="text-item2" >
-                                <div class="logo" ></div>
-                                <div class="title" >
-                                    <h5>Pakistan PM Imran Khan addresses United Nations General Assembly</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cardList1-items" >
-                        <div class="image" >
-                            <img src="./components/card image.jpg" alt="Profile Photo" width="100%" height="100%">
-                        </div>
-                        <div class="text" >
-                            <div class="text-item1" >
-                                <div class="logo" >
-                                    <img src="./components/profile.jpg" alt="Profile Photo" width="40" height="40">
-                                </div>
-                                <div class="title" >
-                                    <h3>Pakistan PM Imran Khan addresses United Nations</h3>
-                                </div>
-                            </div>
-                            <div class="text-item2" >
-                                <div class="logo" ></div>
-                                <div class="title" >
-                                    <h5>Pakistan PM Imran Khan addresses United Nations General Assembly</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardList2" >
-                    <div class="cardList1-items" >
-                        <div class="image" >
-                            <img src="./components/card image.jpg" alt="Profile Photo" width="100%" height="100%">
-                        </div>
-                        <div class="text" >
-                            <div class="text-item1" >
-                                <div class="logo" >
-                                    <img src="./components/profile.jpg" alt="Profile Photo" width="40" height="40">
-                                </div>
-                                <div class="title" >
-                                    <h3>Pakistan PM Imran Khan addresses United Nations</h3>
-                                </div>
-                            </div>
-                            <div class="text-item2" >
-                                <div class="logo" ></div>
-                                <div class="title" >
-                                    <h5>Pakistan PM Imran Khan addresses United Nations General Assembly</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cardList1-items" >
-                        <div class="image" >
-                            <img src="./components/card image.jpg" alt="Profile Photo" width="100%" height="100%">
-                        </div>
-                        <div class="text" >
-                            <div class="text-item1" >
-                                <div class="logo" >
-                                    <img src="./components/profile.jpg" alt="Profile Photo" width="40" height="40">
-                                </div>
-                                <div class="title" >
-                                    <h3>Pakistan PM Imran Khan addresses United Nations</h3>
-                                </div>
-                            </div>
-                            <div class="text-item2" >
-                                <div class="logo" ></div>
-                                <div class="title" >
-                                    <h5>Pakistan PM Imran Khan addresses United Nations General Assembly</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cardList1-items" >
-                        <div class="image" >
-                            <img src="./components/card image.jpg" alt="Profile Photo" width="100%" height="100%">
-                        </div>
-                        <div class="text" >
-                            <div class="text-item1" >
-                                <div class="logo" >
-                                    <img src="./components/profile.jpg" alt="Profile Photo" width="40" height="40">
-                                </div>
-                                <div class="title" >
-                                    <h3>Pakistan PM Imran Khan addresses United Nations</h3>
-                                </div>
-                            </div>
-                            <div class="text-item2" >
-                                <div class="logo" ></div>
-                                <div class="title" >
-                                    <h5>Pakistan PM Imran Khan addresses United Nations General Assembly</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cardList1-items" >
-                        <div class="image" >
-                            <img src="./components/card image.jpg" alt="Profile Photo" width="100%" height="100%">
-                        </div>
-                        <div class="text" >
-                            <div class="text-item1" >
-                                <div class="logo" >
-                                    <img src="./components/profile.jpg" alt="Profile Photo" width="40" height="40">
-                                </div>
-                                <div class="title" >
-                                    <h3>Pakistan PM Imran Khan addresses United Nations</h3>
-                                </div>
-                            </div>
-                            <div class="text-item2" >
-                                <div class="logo" ></div>
-                                <div class="title" >
-                                    <h5>Pakistan PM Imran Khan addresses United Nations General Assembly</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+               </div>
+        </nav>
     </div>
 </body>
 </html>
