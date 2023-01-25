@@ -1,8 +1,6 @@
-
 #body{
     height: 100%;
     width: 98%;
-    /* background-color: black; */
 }
 /* ----------Navbar Styling---------- */
 #navbar{
@@ -10,12 +8,10 @@
     height: 5%;
     padding-left: 16px;
     padding-right: 16px;
-    /* height: 56px; */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* background-color: red; */
 }
 #nav-item1{
     height: 56;
@@ -32,7 +28,6 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* background-color: aqua; */
 }
 #input-field{
     height: 40px;
@@ -55,12 +50,9 @@
     border: none;
     height: 38px;
     width: 580px;
-    /* border-left:rgb(209, 208, 208) solid 1px; */
     border-right: rgb(209, 208, 208) solid 1px; 
-    
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-       /* border-radius: 20px; */
 }
 #nav-item3{
     height: 40px;
@@ -73,7 +65,6 @@
     border-radius: 50%;
   }
   ::placeholder{
-    /* color: red; */
     padding-left: 20px;
     font-size: 16px;
   }
@@ -81,7 +72,6 @@
 #side-navbar{
     height: 760px;
     width: 17%;
-    /* background-color: black; */
 }
 #side-navbar-block-1{
     height: 305px;
@@ -90,7 +80,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: black; */
 }
 #block-1-item-1{
     height: auto;
@@ -100,7 +89,6 @@
 #block-1-item-2{
     border-top: black solid 1px ;
     padding-top: 10px;
-    /* padding-bottom: 10px; */
 }
 #side-navbar-block-2{
     height: 305px;
@@ -129,8 +117,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* background-color: #F2F2F2; */
-    /* margin-bottom: 2px; */
 }
 .home{
     background-color: #f2f2f2;
@@ -145,7 +131,6 @@
 #side-items p{
     padding-left: 20px;
 }
-
 /* ----------Header Styling---------- */
 #header{
     float: right;
@@ -156,7 +141,6 @@
     justify-content: space-between;
     align-items: center;
     height: 56px;
-    /* background-color: aqua; */
 }
 button{
     border: none;
@@ -174,7 +158,6 @@ button{
     float: right;
     height: 700px;
     width: 82%;
-    /* background-color: blue; */
 }
 .row{
     height: 312px;
@@ -184,15 +167,12 @@ button{
 }
 #card{
     height: 290px;
-    /* margin: 5px; */
     width: 272px;
-    /* background-color: aliceblue; */
     padding: 5px;
 }
 #img{
     height: 55%;
     width: 100%;
-    /* background-color: black; */
 }
 #img img{
     height: 159.5px;
@@ -203,12 +183,10 @@ button{
     height: 45%;
     width: 100%;
     display: flex;
-    /* background-color: rgb(177, 34, 34); */
 }
 #logo{
     height: 100%;
     width: 25%;
-    /* background-color: blueviolet; */
 }
 #logo img{
     height: 46px;
@@ -219,21 +197,18 @@ button{
 #text-detail{
     height: 100%;
     width: 75%;
-    /* background-color: rgb(163, 128, 195); */
 }
 #heading{
     height: 50%;
     width: 100%;
     display: flex;
     align-items: center;
-    /* background-color: orange; */
 }
 #details{
     height: 50%;
     width: 100%;
     display: flex;
     align-items: center;
-    /* background-color: olive; */
 }
 #details p{
     font-size: 15px;
