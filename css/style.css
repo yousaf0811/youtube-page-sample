@@ -63,9 +63,9 @@
     height: 305px;
     width: 216px;
     padding: 10px;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
 }
 #block-1-item-1{
     height: auto;
@@ -80,9 +80,9 @@
     height: 305px;
     width: 216px;
     padding: 10px;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
 }
 #block-2-item-1{
     height: auto;
@@ -207,4 +207,9 @@ button{
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+.flex-class-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
